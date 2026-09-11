@@ -372,11 +372,11 @@ export const botConfig = {
     // Welcome template posted when a user joins.
     // Placeholders: {user}, {server}, {memberCount}
     defaultWelcomeMessage:
-      "Welcome {user} to {server}! We now have {memberCount} members!",
+      "Dobrodosao {user} na {server}! Sada imamo {memberCount} clanova!",
     // Goodbye template posted when a user leaves.
     // Placeholders: {user}, {memberCount}
     defaultGoodbyeMessage:
-      "{user} has left the server. We now have {memberCount} members.",
+      "{user} nas je napustio. Sada imamo {memberCount} clanova.",
     // Channel ID for welcome messages.
     defaultWelcomeChannel: null,
     // Channel ID for goodbye messages.
@@ -411,8 +411,8 @@ export const botConfig = {
     types: {
       // Built-in counter types and how each count is calculated.
       members: {
-        name: "👥 Members",
-        description: "Total members in the server",
+        name: "👥 Clanova",
+        description: "Ukupno clanova na serveru",
         getCount: (guild) => guild.memberCount.toString(),
       },
       bots: {
@@ -434,9 +434,9 @@ export const botConfig = {
   // GENERIC BOT MESSAGES
   // =========================
   messages: {
-    noPermission: "You do not have permission to use this command.",
-    cooldownActive: "Please wait {time} before using this command again.",
-    errorOccurred: "An error occurred while executing this command.",
+    noPermission: "Nemate permisiju da koristite ovu komandu.",
+    cooldownActive: "Sacekaj {time} pre koriscenja komande opet.",
+    errorOccurred: "Doslo je do greske prilikom izvrsavanja ove komande.",
     missingPermissions:
       "I am missing required permissions to perform this action.",
     commandDisabled: "This command has been disabled.",
